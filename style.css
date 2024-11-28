@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif;';
+}
+
+.icon-link {
+    display: inline-block; /* Allows for better alignment */
+    text-decoration: none; /* Removes underline from the link */
+}
+
+.icon {
+    width: 50px; /* Set the width of the icon */
+    height: 50px; /* Set the height of the icon */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightsteelblue;
+  color: #555;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.skills-section {
+  margin-bottom: 40px;
+}
+
+.skills-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-item span {
+  width: 40%;
+}
+
+.progress-bar {
+  width: 60%;
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress {
+  background: #000080;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+
+h2 {
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.progress-bar {
+    background-color: #d3d3d3;
+    border-radius: 40px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: #000080;
+    border-radius: 40px;
+}
+
+.container {
+    width: 100%; /* Set the container to full width */
+    max-width: 1400px; /* Increase the maximum width for the content */
+    padding: 0 20px; /* Add horizontal padding to the container */
+    box-sizing: border-box; /* Include padding in the total width */
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+#about,
+#skills,
+#projects,
+#contact {
+    border: 2px solid white; /* Add a white border */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    padding: 20px; /* Add padding inside the sections */
+    margin: 20px; /* Add margin between sections */
+    background-color: rgba(255, 255, 255, 0.9); /* Optional: Add a slight white background for contrast */
+    width: calc(100% - 40px); /* Set a width for the sections, accounting for padding and margin */
+    max-width: 100%; /* Optional: Set a max width for larger screens */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+header {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+
+.navigation {
+    margin-left: -300px;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: #000080;
+}
+
+.btn-talk {
+    color: #FFF;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: #000080;
+    border-radius: 10px;
+    border: 2px solid #000080;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-talk:hover {
+    color: #000080;
+    background: transparent;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(picture.jpg);
+    background-color: lightsteelblue;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 600px 800px;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.content {
+    max-width: 1700px;
+    color: #555;
+    background-size: fill;
+}
+
+.content h2 {
+    font-size: 2em;
+}
+
+.content h2 span {
+    color: #000080;
+}
+
+.content h4 {
+    font-size: 2em;
+}
+
+.content p {
+    padding: 10px 0 20px 0;
+}
+
+.centered-section {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 50vh; 
+    padding: 10px; 
+}
+
+.centered-section .content {
+    max-width: 1000px; 
+    text-align: center; 
+    color: #555; 
+}
+
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #000080;
+    border-radius: 10px;
+    border: 2px solid #000080;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-group a:hover:nth-child(1) { 
+    color: #000080;
+    background: transparent;
+}
+
+.btn-group a:nth-child(2) {
+    color: #000080;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.btn-group a:hover:nth-child(2) {
+    color: #fff;
+    background: #000080;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 50px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #000080;
+    border-radius: 100%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid #000080;
+    transition: .3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons a i {
+    color: #fff;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: fixed; 
+    right: 30px; 
+    bottom: 70px; 
+    z-index: 100; 
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(0, 0, 128);
+    align-items: center;
+}
+
+.button:hover .svgIcon {
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+.button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    font-size: 0px;
+}
+
+.button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    transition-duration: 0.3s;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+label {
+    font-weight: bold; /* Make labels bold */
+}
+
+input, textarea {
+    padding: 10px; /* Add padding to input fields */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+}
+
+.message-container {
+    display: flex; /* Use Flexbox for layout */
+    align-items: flex-start; /* Align items at the start */
+    gap: 10px; /* Space between label and textarea */
+}
+
+textarea {
+    padding: 10px; /* Add padding to the textarea */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+    width: 100%; /* Make the textarea take the full width of the form */
+    height: 150px; /* Set a specific height for the textarea */
+    resize: none; /* Disable resizing */
+}
+
+button {
+    padding: 10px; /* Add padding to the button */
+    background-color: #000080; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #f1f1f1; /* Optional: Add a background color for the footer */
+}
+
+footer p {
+    color: #555;
+}
